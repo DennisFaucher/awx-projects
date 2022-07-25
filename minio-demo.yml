@@ -1,7 +1,7 @@
 ---
 
 
-- hosts: localhost
+- hosts: all
   roles:
     - alexisfacques.ansible_module_minio_bucket
   tasks:
