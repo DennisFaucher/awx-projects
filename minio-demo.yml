@@ -2,8 +2,6 @@
 
 
 - hosts: all
-  roles:
-    - alexisfacques.ansible_module_minio_bucket
   tasks:
     - name: 'This should create a bucket'
       minio_bucket:
