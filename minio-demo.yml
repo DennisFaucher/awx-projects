@@ -2,7 +2,7 @@
   roles:
     - alexisfacques.ansible_module_minio_bucket
   tasks:
-    - name: "This should create a bucket"
+    - name: 'This should create a bucket'
       minio_bucket:
         s3_url: http://192.168.1.198:9000
         name: test-bucket
@@ -11,7 +11,7 @@
         state: present
         policy: read-only
 
-    - name: "This should delete a bucket"
+    - name: 'This should delete a bucket'
       minio_bucket:
         s3_url: http://192.168.1.198:9000
         name: test-bucket
